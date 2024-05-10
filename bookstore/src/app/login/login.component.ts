@@ -21,7 +21,6 @@ export class LoginComponent {
   constructor(private router: Router, private http: HttpClient, private authService: AuthService){}
 
   onLogin(): void {
-      // Perform authentication logic here
       this.http.post('https://freeapi.miniprojectideas.com/api/User/Login', this.loginObj).subscribe((res:any)=>{
         if (res.result){
           alert("login succes");
@@ -32,9 +31,8 @@ export class LoginComponent {
           alert(res.message)
         }
       })
-      // Add authentication logic and navigate to the next page if successful
     }
-    // Perform authentication logic
+    
     //this.authService.login(this.loginObj.emailId, this.loginObj.password);
   }
 

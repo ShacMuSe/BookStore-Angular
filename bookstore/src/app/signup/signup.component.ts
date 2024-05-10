@@ -15,11 +15,9 @@ export class SignupComponent {
   password: string = '';
 
   onSubmit() {
-    // Add sign-up logic here
     console.log('Full Name:', this.fullname);
     console.log('Email:', this.email);
     console.log('Password:', this.password);
-    // Add logic to save user details and navigate to the login page or perform other actions
   }
 
 }
